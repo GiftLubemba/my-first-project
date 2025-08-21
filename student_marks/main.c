@@ -1,5 +1,5 @@
 #include <stdio.h>
-#include <limits.h> // For INT_MAX and INT_MIN
+#include <limits.h>  
 
 int main() {
     int numStudents;
@@ -8,13 +8,13 @@ int main() {
 
     if (numStudents <= 0) {
         printf("Number of students must be positive.\n");
-        return 1; // Indicate an error
+        return 1;  
     }
 
     float marks;
     float sumMarks = 0;
-    float highestMark = INT_MIN; // Initialize with the smallest possible integer value
-    float lowestMark = INT_MAX;  // Initialize with the largest possible integer value
+    float highestMark = INT_MIN;  
+    float lowestMark = INT_MAX;  
 
     for (int i = 0; i < numStudents; i++) {
         printf("Enter marks for student %d: ", i + 1);
